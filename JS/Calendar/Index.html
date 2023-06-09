@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calender</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>
+  <script src="designer.js" defer></script>
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="active-page home-page" href="./Index.html">Home</a>
+        <a class="calendar-page" href="./dash.html">Calender</a>
+        <a class="event-page" href="./event.html">Event Manager</a>
+    </div>
+      
+    <!-- Use any element to open the sidenav -->
+    <i onclick = "openNav()" class="nav-icon fa fa-bars"></i>
+    
+
+<div class="container-fluid">
+    
+    <div class="col-sm-9">
+        
+      <div class="well">
+        <h4>Title</h4>
+        <p>Mini-project on basic calendar with event scheduler</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="well">
+            <h4>Project description</h4>
+            <p>Calendar is a basic project that can be done by a beginner level web designer. I have done this project with the help of HTML, JS(vennila), CSS.
+            I have also incoprated a day-day scheduler with this calender which is opened when clicked on a particular date. I have attached the source code with this web
+            page for users reference</p> 
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <h4>HTML</h4>
+            <p><script src="https://gist.github.com/JeyadeepakUR/e8db72781ba2068cdfccd3441a2ac3ee.js"></script></p> 
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <h4>JS</h4>
+            <p><script src="https://gist.github.com/JeyadeepakUR/948152dba51d706f3a779390136b0e4d.js"></script></p> 
+          </div>
+        </div>
+      </div>
+   	</div>
+  </div>
+</div>
+</body>
+</html>

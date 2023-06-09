@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="designer.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+        /* Background image */
+        background-image: url('Assets/peakpx.jpg');
+        /* Full-screen */
+        height: 100%;
+        /* Center the background image */
+        background-position: center;
+        /* Scale and zoom in the image */
+        background-size: cover;
+        /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+        position: relative;
+        /* Add a white text color to all elements inside the .bgimg container */
+        color: white;
+        /* Add a font */
+        font-family: "Courier New", Courier, monospace;
+        /* Set the font-size to 25 pixels */
+        font-size: 25px;
+        }
+
+        /* Position text in the top-left corner */
+        .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+        }
+
+        /* Position text in the bottom-left corner */
+        .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+        }
+
+        /* Position text in the middle */
+        .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+
+        /* Style the <hr> element */
+        hr {
+        margin: auto;
+        width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="active-page home-page" href="./Index.html">Home</a>
+        <a class="calendar-page" href="./dash.html">Calender</a>
+        <a class="event-page" href="./event.html">Event Manager</a>
+    </div>
+    <i onclick = "openNav()" class="nav-icon fa fa-bars"></i>        
+    </div>
+    <div class="middle">
+        <h1>COMING SOON</h1>
+        <hr>
+        <p id = "countdowntxt"></p>
+    </div>
+</body>
+</html>
